@@ -1,0 +1,3 @@
+.advantage { position: relative; overflow: hidden; padding: clamp(48px, 5vw, 72px) clamp(24px, 8vw, 120px); background: linear-gradient(180deg, var(--navy-2), var(--navy)); }
+.advantage__arc { position: absolute; right: 0; top: 0; width: 55%; height: 100%; opacity: 0.5; pointer-events: none; }
+.advantage__list { position: relative; margin-top: clamp(36px, 4vw, 56px); }

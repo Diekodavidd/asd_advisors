@@ -1,0 +1,12 @@
+.split-head { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr); align-items: center; gap: clamp(24px, 3.4vw, 48px); }
+.split-head__intro { display: flex; flex-direction: column; gap: 20px; }
+.split-head__title { font-size: clamp(34px, 3.8vw, 58px); line-height: 1.05; }
+.split-head__rule { align-self: stretch; width: 1px; margin: 24px 0; background: rgba(15, 26, 42, 0.2); transform-origin: top; }
+.split-head__text { max-width: 470px; font-size: 15px; color: var(--ink-2); }
+.split-head--light .split-head__rule { background: rgba(195, 154, 100, 0.45); }
+.split-head--light .split-head__text { font-size: 16px; color: var(--mist); font-weight: 300; }
+
+@media (max-width: 860px) {
+  .split-head { grid-template-columns: 1fr; }
+  .split-head__rule { display: none; }
+}

@@ -1,0 +1,23 @@
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 50; padding: 22px clamp(24px, 7vw, 104px); transition: background 0.5s, padding 0.5s, backdrop-filter 0.5s; }
+.nav--solid { background: rgba(11, 22, 37, 0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); padding-top: 12px; padding-bottom: 12px; }
+.nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.nav__links { display: flex; gap: clamp(18px, 3vw, 44px); font-size: 14px; }
+.nav__link { position: relative; padding-bottom: 6px; color: var(--paper); }
+.nav__link::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--gold); transform: scaleX(0); transform-origin: right; transition: transform 0.5s var(--ease); }
+.nav__link:hover::after, .nav__link.is-active::after { transform: scaleX(1); transform-origin: left; }
+.nav__link:hover { color: var(--paper); }
+.nav__actions { display: flex; align-items: center; gap: 20px; }
+.nav__burger { width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(242, 236, 226, 0.4); background: transparent; color: var(--paper); display: grid; place-items: center; font-size: 18px; cursor: pointer; transition: border-color 0.3s; }
+.nav__burger:hover { border-color: var(--gold); }
+
+.menu { position: fixed; inset: 0; z-index: 45; display: flex; flex-direction: column; justify-content: center; padding: 120px var(--pad-x) 48px; background: radial-gradient(120% 90% at 100% 0%, var(--navy-3), var(--navy) 60%); }
+.menu__links { display: flex; flex-direction: column; gap: 8px; }
+.menu__link { display: flex; align-items: baseline; gap: 24px; font-family: var(--serif); font-size: clamp(44px, 7vw, 96px); line-height: 1.05; color: var(--paper); }
+.menu__link:hover, .menu__link.is-active { color: var(--gold); }
+.menu__item { display: block; }
+.menu__num { font-family: var(--sans); font-size: 13px; letter-spacing: 2px; color: var(--gold); }
+.menu__foot { margin-top: 56px; font-size: 12px; letter-spacing: 3px; color: var(--mist); }
+
+@media (max-width: 960px) {
+  .nav__links, .nav__cta { display: none; }
+}

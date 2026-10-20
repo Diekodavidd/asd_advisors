@@ -1,0 +1,5 @@
+.motto { position: relative; display: flex; align-items: center; padding: 24px 16px; }
+.motto__rule { position: absolute; left: 0; top: 18%; bottom: 18%; width: 1px; background: var(--gold); transform-origin: top; }
+.motto__text { display: flex; flex-direction: column; gap: 8px; padding-left: 14px; font-size: 10px; letter-spacing: 2.4px; line-height: 1.8; color: var(--gold-text); }
+.motto__plus { font-size: 14px; }
+.motto__end { width: 28px; height: 1px; margin-top: 6px; background: var(--gold); transform-origin: left; }

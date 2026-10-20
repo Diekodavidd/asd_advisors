@@ -1,0 +1,4 @@
+.badges { display: flex; flex-wrap: wrap; gap: clamp(18px, 2.6vw, 36px); }
+.badge { display: flex; align-items: center; gap: 12px; font-size: 13px; line-height: 1.35; }
+.badge__icon { flex: none; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(195, 154, 100, 0.6); display: grid; place-items: center; font-size: 18px; color: var(--gold); }
+.badge__label { white-space: pre-line; }

@@ -1,0 +1,8 @@
+.toc { display: flex; flex-direction: column; gap: 14px; }
+.toc__title, .eyebrow-legal { font-size: 11px; letter-spacing: 2.8px; font-weight: 500; text-transform: uppercase; color: #a8642e; }
+.toc__list { position: relative; display: flex; flex-direction: column; border-left: 1px solid rgba(15, 26, 42, 0.14); }
+.toc__marker { position: absolute; left: -1px; top: 0; width: 2px; height: 34px; background: var(--gold); }
+.toc__link { display: flex; align-items: center; gap: 16px; height: 34px; padding-left: 14px; font-size: 12.5px; color: #5a5f68; border-bottom: 1px solid rgba(15, 26, 42, 0.07); transition: color 0.3s, padding 0.4s var(--ease); }
+.toc__link:hover { color: var(--ink); padding-left: 20px; }
+.toc__link.is-active { color: var(--ink); font-weight: 500; }
+.toc__n { width: 18px; opacity: 0.75; }

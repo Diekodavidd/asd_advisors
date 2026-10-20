@@ -1,0 +1,9 @@
+.newsletter { display: flex; align-items: center; gap: 8px; max-width: 420px; padding: 4px 4px 4px 22px; border: 1px solid rgba(15, 26, 42, 0.25); border-radius: 40px; background: #f8f4ee; transition: border-color 0.3s; }
+.newsletter:focus-within { border-color: var(--gold); }
+.newsletter.is-error { border-color: #c0563f; }
+.newsletter input { flex: 1; min-width: 0; padding: 10px 0; border: none; outline: none; background: transparent; font-size: 13px; color: var(--ink); }
+.newsletter input::placeholder { color: #7b7f88; }
+.newsletter button { flex: none; width: 44px; height: 44px; border: none; border-radius: 50%; background: var(--gold); color: var(--cream); display: grid; place-items: center; font-size: 17px; cursor: pointer; transition: background 0.3s; }
+.newsletter button:hover { background: #a87d47; }
+.newsletter__done { display: flex; align-items: center; gap: 14px; max-width: 420px; padding: 14px 18px; border-radius: 40px; background: var(--ink); color: var(--cream); font-size: 14px; }
+.newsletter__done svg { font-size: 22px; color: var(--gold); }

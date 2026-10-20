@@ -1,0 +1,13 @@
+.impact { padding: clamp(36px, 4vw, 52px) clamp(24px, 10vw, 144px); background: linear-gradient(90deg, var(--navy), var(--navy-2)); }
+.impact .eyebrow { margin-bottom: 18px; }
+.impact__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.impact__item { padding: 4px clamp(16px, 3vw, 44px); }
+.impact__item:first-child { padding-left: 0; }
+.impact__item + .impact__item { border-left: 1px solid rgba(242, 236, 226, 0.14); }
+.impact__value { font-family: var(--serif); font-size: clamp(36px, 3.4vw, 52px); line-height: 1; color: var(--gold); }
+.impact__label { margin-top: 10px; font-size: 14px; font-weight: 500; }
+
+@media (max-width: 860px) {
+  .impact__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 28px; }
+  .impact__item:nth-child(3) { padding-left: 0; border-left: none; }
+}

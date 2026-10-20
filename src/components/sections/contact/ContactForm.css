@@ -1,0 +1,23 @@
+.cform { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.cform__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 10px; }
+.cform__input { width: 100%; height: 46px; padding: 0 14px; border: 1px solid rgba(15, 26, 42, 0.18); border-radius: 4px; background: #f8f4ee; color: var(--ink); font-size: 13px; outline: none; transition: border-color 0.3s, box-shadow 0.3s, background 0.3s; }
+.cform__input::placeholder { color: #7b7f88; }
+.cform__input:focus { border-color: var(--gold); background: #fbf8f3; box-shadow: 0 0 0 3px rgba(195, 154, 100, 0.18); }
+.cform__input.is-error { border-color: #c0563f; }
+.cform__select { position: relative; }
+.cform__select select { padding-right: 40px; appearance: none; -webkit-appearance: none; cursor: pointer; }
+.cform__caret { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); pointer-events: none; font-size: 15px; }
+.cform__textarea { height: auto; padding: 14px; resize: vertical; }
+.cform__error { margin: 0; overflow: hidden; font-size: 12.5px; color: #a8432f; }
+.cform__submit-wrap { align-self: flex-start; margin-top: 8px; }
+.cform__submit { display: flex; align-items: center; gap: 56px; padding: 4px 4px 4px 56px; border: none; border-radius: 40px; background: var(--ink); color: var(--cream); font-size: 14px; font-weight: 500; cursor: pointer; transition: background 0.3s, box-shadow 0.4s; }
+.cform__submit:hover { background: #16263d; box-shadow: 0 18px 40px -16px rgba(15, 26, 42, 0.6); }
+.cform__submit:disabled { cursor: progress; }
+.cform__submit .pill__dot { width: 42px; height: 42px; }
+.cform__note { display: flex; align-items: center; gap: 8px; margin: 6px 0 0; font-size: 12px; color: var(--ink-2); }
+
+.cform__sent { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; max-width: 520px; margin-top: 10px; padding: 32px; border-radius: 6px; background: var(--ink); color: var(--cream); }
+.cform__sent-icon { width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--gold); display: grid; place-items: center; font-size: 24px; color: var(--gold); }
+.cform__sent-title { margin: 0; font-family: var(--serif); font-weight: 400; font-size: 28px; line-height: 1.1; }
+.cform__sent-text { margin: 0; font-size: 14px; line-height: 1.6; color: var(--mist); }
+.cform__again { margin-top: 6px; padding: 0 0 4px; border: none; border-bottom: 1px solid var(--gold); background: none; color: var(--cream); font-size: 13px; cursor: pointer; }

@@ -1,0 +1,12 @@
+.leadership { position: relative; overflow: hidden; display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); background: var(--cream); color: var(--ink); }
+.leadership__copy { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 22px; padding: clamp(56px, 6vw, 80px) clamp(24px, 3vw, 48px) clamp(56px, 6vw, 80px) clamp(24px, 10vw, 144px); }
+.leadership__title { font-size: clamp(36px, 3.8vw, 58px); line-height: 1.05; }
+.leadership__lead { max-width: 480px; font-size: 15px; color: var(--ink-2); }
+.leadership__action { margin-top: 8px; }
+.leadership__visual { position: relative; padding: clamp(28px, 3vw, 44px) 0; }
+.leadership__corner { position: absolute; right: 0; top: 0; width: 28%; height: 30%; background: #1a1a1c; border-bottom-left-radius: 100%; transform-origin: top right; }
+.leadership__image { min-height: 380px; }
+
+@media (max-width: 860px) {
+  .leadership { grid-template-columns: 1fr; }
+}

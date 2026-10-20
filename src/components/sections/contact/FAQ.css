@@ -1,0 +1,23 @@
+.faq { display: grid; grid-template-columns: minmax(0, 0.62fr) minmax(0, 1fr) minmax(0, 0.4fr) minmax(0, 0.24fr); background: var(--cream); color: var(--ink); }
+.faq__intro { display: flex; flex-direction: column; gap: 22px; margin: 24px 0; padding: clamp(36px, 3.6vw, 52px) clamp(20px, 2.4vw, 36px) clamp(36px, 3.6vw, 52px) clamp(24px, 6vw, 60px); border-right: 1px solid rgba(15, 26, 42, 0.12); }
+.faq__title { font-size: clamp(36px, 4vw, 56px); line-height: 1.02; }
+.faq__cta { align-self: flex-end; }
+.faq__arrow { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--gold); color: var(--gold); display: grid; place-items: center; transition: background 0.4s, color 0.4s; }
+.faq__arrow:hover { background: var(--gold); color: var(--cream); }
+.faq__list { display: flex; flex-direction: column; justify-content: center; padding: clamp(28px, 3vw, 44px); }
+.faq__item { border-bottom: 1px solid rgba(15, 26, 42, 0.15); }
+.faq__q { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; border: none; background: none; cursor: pointer; text-align: left; font-family: var(--serif); font-size: 16px; color: var(--ink); transition: color 0.3s; }
+.faq__q:hover { color: var(--gold-text); }
+.faq__icon { display: grid; flex: none; font-size: 16px; }
+.faq__a { overflow: hidden; }
+.faq__a p { margin: 0 0 16px; max-width: 520px; font-size: 13.5px; line-height: 1.6; color: var(--ink-2); }
+.faq__image { min-height: 260px; border-top-left-radius: 70% 100%; }
+
+@media (max-width: 1024px) {
+  .faq { grid-template-columns: minmax(0, 0.7fr) minmax(0, 1fr); }
+  .faq__image, .faq .motto { display: none; }
+}
+@media (max-width: 700px) {
+  .faq { grid-template-columns: 1fr; }
+  .faq__intro { margin: 0; border-right: none; padding-bottom: 0; }
+}

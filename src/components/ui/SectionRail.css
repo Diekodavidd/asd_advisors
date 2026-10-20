@@ -1,0 +1,7 @@
+.srail { display: flex; flex-direction: column; gap: 18px; margin-top: -30px; }
+.srail__item { display: flex; flex-direction: column; gap: 6px; color: #e9e4da; transition: color 0.5s; }
+.srail__item:hover, .srail__item.is-active { color: var(--gold); }
+.srail__text { display: flex; flex-direction: column; gap: 6px; }
+.srail__n { font-family: var(--serif); font-size: 22px; line-height: 1; }
+.srail__label { font-size: 10.5px; letter-spacing: 3px; text-transform: uppercase; }
+.srail__line { width: 36px; height: 1px; background: var(--gold); transform-origin: left; }
