@@ -16,6 +16,7 @@ import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
+import NotFound404 from './pages/Unknown';
 
 const ROUTES = [
   { path: '/', element: <Home /> },
@@ -30,21 +31,38 @@ const ROUTES = [
   { path: '/contact', element: <Contact /> },
   { path: '/privacy', element: <Privacy /> },
   { path: '/terms', element: <Terms /> },
-  { path: '*', element: <Home /> },
+  { path: '*', element: <NotFound404 /> },
 ];
+
 
 export default function App() {
   const location = useLocation();
+
+  const isNotFound = !ROUTES.some(
+    (route) => route.path === location.pathname
+  );
+
   return (
     <MotionConfig reducedMotion="user">
       <ScrollManager />
       <ScrollProgress />
-      <Navbar />
+
+      {!isNotFound && <Navbar />}
+
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          {ROUTES.map((r) => <Route key={r.path} path={r.path} element={<Page>{r.element}</Page>} />)}
+          {ROUTES.map((route) => (
+            <Route
+              key={route.path}
+              path={route.path}
+              element={<Page>{route.element}</Page>}
+            />
+          ))}
+
+          <Route path="*" element={<NotFound404 />} />
         </Routes>
       </AnimatePresence>
     </MotionConfig>
   );
 }
+
