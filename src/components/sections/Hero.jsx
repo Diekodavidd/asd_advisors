@@ -52,7 +52,7 @@ export default function Hero() {
               Explore Our Services
             </a>
           </Magnetic>
-          <a href="#contact" className="underline-link">Talk to a Consultant <PiArrowRight /></a>
+          {/* <a href="#contact" className="underline-link">Talk to a Consultant <PiArrowRight /></a> */}
         </motion.div>
         <motion.div className="hero__trust" {...fadeOnMount(1.25)}>
           <div className="hero__avatars" aria-hidden="true">
