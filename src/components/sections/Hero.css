@@ -46,3 +46,12 @@
   .hero__visual { grid-template-columns: 1fr; min-height: 460px; }
   .hero__rail { display: none; }
 }
+
+.hero__play .play {
+  color: var(--ink);
+}
+
+.hero__play .play:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 5px;
+}

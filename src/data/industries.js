@@ -1,9 +1,21 @@
 import { PiChartBarLight, PiLightbulbLight, PiUsersThreeLight, PiTargetLight } from 'react-icons/pi';
-import hero from '../assets/images/industries/hero.png';
-import cta from '../assets/images/industries/cta.png';
+const hero = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539952/hero_hdurof.png';
+const cta = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539909/cta_livrqv.png';
 
-const cards = import.meta.glob('../assets/images/industries/sector-*.png', { eager: true, import: 'default' });
-const card = (n) => cards['../assets/images/industries/sector-' + String(n).padStart(2, '0') + '.png'];
+const INDUSTRIES_CARD_IMAGES = [
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539946/sector-01_r21trn.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539954/sector-02_n9uapt.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539969/sector-03_znp9t6.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539960/sector-04_bb2efu.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539956/sector-05_bpj6ae.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539954/sector-06_zpnkib.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539940/sector-07_hnuwsr.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539942/sector-08_uxrifl.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539933/sector-09_wtulsy.png',
+];
+
+const card = (n) => INDUSTRIES_CARD_IMAGES[n - 1];
+
 
 export const INDUSTRIES_IMAGES = { hero, cta };
 

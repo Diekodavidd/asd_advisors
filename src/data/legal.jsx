@@ -1,9 +1,9 @@
 import { PiUserLight, PiFileTextLight, PiGearSixLight } from 'react-icons/pi';
-import termsHero from '../assets/images/legal/terms-hero.png';
-import termsSide from '../assets/images/legal/terms-side.png';
-import privacyHero from '../assets/images/legal/privacy-hero.png';
-import privacySide from '../assets/images/legal/privacy-side.png';
-import cta from '../assets/images/legal/cta.png';
+const termsHero = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540537/terms-hero_rzrzts.png';
+const termsSide = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540548/terms-side_qf9eey.png';
+const privacyHero = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540541/privacy-hero_n1ofam.png';
+const privacySide = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540548/privacy-side_e3y8to.png';
+const cta = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540547/cta_npcww6.png';
 
 // Copy taken from the approved designs — have it reviewed by counsel before launch.
 export const LEGAL_CTA_IMAGE = cta;

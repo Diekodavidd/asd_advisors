@@ -2,12 +2,12 @@ import {
   PiSealCheckLight, PiUsersThreeLight, PiPlantLight, PiIntersectLight,
   PiShieldCheckLight, PiStarFourLight, PiGearSixLight,
 } from 'react-icons/pi';
-import hero from '../assets/images/careers/hero.png';
-import culture from '../assets/images/careers/culture.png';
-import life1 from '../assets/images/careers/life-1.png';
-import life2 from '../assets/images/careers/life-2.png';
-import life3 from '../assets/images/careers/life-3.png';
-import cta from '../assets/images/careers/cta.png';
+const hero = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540283/hero_inmmc0.png';
+const culture = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540289/culture_mwmoye.png';
+const life1 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540290/life-1_rfpwdr.png';
+const life2 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540287/life-2_djyevs.png';
+const life3 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540290/life-3_tf842g.png';
+const cta = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540291/cta_x1d4or.png';
 
 export const CAREERS_IMAGES = { hero, culture, life1, life2, life3, cta };
 

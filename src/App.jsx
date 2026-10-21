@@ -1,9 +1,13 @@
+
 import { AnimatePresence, MotionConfig } from 'framer-motion';
 import { Route, Routes, useLocation } from 'react-router-dom';
+
 import ScrollProgress from './components/layout/ScrollProgress';
 import ScrollManager from './components/layout/ScrollManager';
 import Navbar from './components/layout/Navbar';
 import Page from './components/layout/Page';
+import SiteLoader from './components/SiteLoader';
+
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
@@ -22,18 +26,25 @@ const ROUTES = [
   { path: '/', element: <Home /> },
   { path: '/about', element: <About /> },
   { path: '/services', element: <Services /> },
-  { path: '/services/business-growth-strategy', element: <BusinessGrowthStrategy /> },
-  { path: '/services/business-growth-strategy-alt', element: <BusinessGrowthStrategyAlt /> },
+  {
+    path: '/services/business-growth-strategy',
+    element: <BusinessGrowthStrategy />,
+  },
+  {
+    path: '/services/business-growth-strategy-alt',
+    element: <BusinessGrowthStrategyAlt />,
+  },
   { path: '/industries', element: <Industries /> },
   { path: '/insights', element: <Insights /> },
-  { path: '/insights/unlocking-sustainable-growth', element: <Article /> },
+  {
+    path: '/insights/unlocking-sustainable-growth',
+    element: <Article />,
+  },
   { path: '/careers', element: <Careers /> },
   { path: '/contact', element: <Contact /> },
   { path: '/privacy', element: <Privacy /> },
   { path: '/terms', element: <Terms /> },
-  { path: '*', element: <NotFound404 /> },
 ];
-
 
 export default function App() {
   const location = useLocation();
@@ -46,6 +57,8 @@ export default function App() {
     <MotionConfig reducedMotion="user">
       <ScrollManager />
       <ScrollProgress />
+
+      <SiteLoader />
 
       {!isNotFound && <Navbar />}
 
@@ -65,4 +78,3 @@ export default function App() {
     </MotionConfig>
   );
 }
-

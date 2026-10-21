@@ -1,11 +1,11 @@
-import hero from '../assets/images/insights/hero.png';
-import featured from '../assets/images/insights/featured.png';
-import cta from '../assets/images/insights/cta.png';
-import a1 from '../assets/images/insights/article-01.png';
-import a2 from '../assets/images/insights/article-02.png';
-import a3 from '../assets/images/insights/article-03.png';
-import a4 from '../assets/images/insights/article-04.png';
-import a5 from '../assets/images/insights/article-05.png';
+const hero = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538416/hero_udcg7p.png';
+const featured = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538409/featured_fgxjid.png';
+const cta = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538403/cta_ih6mmy.png';
+const a1 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538399/article-01_ayceix.png';
+const a2 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538407/article-02_awdocf.png';
+const a3 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538409/article-03_joo5gt.png';
+const a4 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538405/article-04_ff0b0z.png';
+const a5 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538408/article-05_flkttq.png';
 
 // Every card links to the sample article for now — give each its own page as you publish them.
 export const ARTICLE_PATH = '/insights/unlocking-sustainable-growth';

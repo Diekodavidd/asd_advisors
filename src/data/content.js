@@ -3,20 +3,34 @@ import {
   PiEyeLight, PiDiamondLight,
 } from 'react-icons/pi';
 
-import heroImg from '../assets/images/hero.png';
-import aboutImg from '../assets/images/about.png';
-import approachImg from '../assets/images/approach.png';
-import ctaImg from '../assets/images/cta.png';
-import corridorImg from '../assets/images/insight-corridor.png';
-import boardroomImg from '../assets/images/insight-boardroom.png';
-import facadeImg from '../assets/images/insight-facade.png';
+// import heroImg from '../assets/images/hero.png';
+// import aboutImg from '../assets/images/about.png';
+// import approachImg from '../assets/images/approach.png';
+// import ctaImg from '../assets/images/cta.png';
+// import corridorImg from '../assets/images/insight-corridor.png';
+// import boardroomImg from '../assets/images/insight-boardroom.png';
+// import facadeImg from '../assets/images/insight-facade.png';
 
-import aboutHeroImg from '../assets/images/about/hero.png';
-import aboutStoryImg from '../assets/images/about/story.png';
-import aboutApproachImg from '../assets/images/about/approach.png';
-import aboutLeadershipImg from '../assets/images/about/leadership.png';
-import aboutGlobeImg from '../assets/images/about/globe.png';
-import aboutCtaImg from '../assets/images/about/cta.png';
+// import aboutHeroImg from '../assets/images/about/hero.png';
+// import aboutStoryImg from '../assets/images/about/story.png';
+// import aboutApproachImg from '../assets/images/about/approach.png';
+// import aboutLeadershipImg from '../assets/images/about/leadership.png';
+// import aboutGlobeImg from '../assets/images/about/globe.png';
+// import aboutCtaImg from '../assets/images/about/cta.png';
+const heroImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538119/hero_ewobqd.png';
+const aboutImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538166/about_lww8oa.png';
+const approachImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538178/approach_nrjzur.png';
+const ctaImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538109/cta_lbzdas.png';
+const corridorImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538114/insight-corridor_z9b4uh.png';
+const boardroomImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538119/insight-boardroom_cc7ddf.png';
+const facadeImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538123/insight-facade_yk2pc3.png';
+
+const aboutHeroImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538384/hero_llsvz0.png';
+const aboutStoryImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538377/story_rgkd7q.png';
+const aboutApproachImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538382/approach_t7tqkb.png';
+const aboutLeadershipImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538373/leadership_d9u593.png';
+const aboutGlobeImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538386/globe_rxufcq.png';
+const aboutCtaImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538369/cta_vqc12s.png';
 
 /* ---------- Shared ---------- */
 

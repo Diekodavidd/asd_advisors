@@ -3,12 +3,12 @@ import {
   PiCompassLight, PiBuildingsLight, PiGearSixLight, PiCoinsLight,
   PiChartLineUpLight, PiSealCheckLight, PiShieldCheckLight, PiCheck,
 } from 'react-icons/pi';
-import hero from '../assets/images/strategy/hero.png';
-import challenges from '../assets/images/strategy/challenges.png';
-import caseImg from '../assets/images/strategy/case.png';
-import r1 from '../assets/images/strategy/related-1.png';
-import r2 from '../assets/images/strategy/related-2.png';
-import r3 from '../assets/images/strategy/related-3.png';
+const hero = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539338/hero_tdagql.png';
+const challenges = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539257/challenges_oigzx3.png';
+const caseImg = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539256/case_rfsdez.png';
+const r1 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539260/related-1_eungqm.png';
+const r2 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539247/related-2_kzmmjf.png';
+const r3 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792539233/related-3_tvifad.png';
 import altHero from '../assets/images/strategy-alt/hero.png';
 import altOverview from '../assets/images/strategy-alt/overview.png';
 import altApproach from '../assets/images/strategy-alt/approach.png';

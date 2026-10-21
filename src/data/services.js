@@ -1,10 +1,24 @@
 import { PiLightbulbLight, PiSlidersHorizontalLight, PiUsersThreeLight, PiTargetLight } from 'react-icons/pi';
-import hero from '../assets/images/services/hero.png';
-import approach from '../assets/images/services/approach.png';
-import cta from '../assets/images/services/cta.png';
+const hero = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538815/hero_s5r7jr.png';
+const approach = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538817/approach_hkjxxc.png';
+const cta = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538786/cta_vl0b3o.png';
 
-const cards = import.meta.glob('../assets/images/services/card-*.png', { eager: true, import: 'default' });
-const card = (n) => cards['../assets/images/services/card-' + String(n).padStart(2, '0') + '.png'];
+const SERVICE_CARD_IMAGES = [
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538815/card-01_k1lzjn.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538825/card-02_vx4lk4.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538817/card-03_t77qgu.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538821/card-04_posjtv.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538785/card-05_ugyuci.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538807/card-06_rkrgxw.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538800/card-07_xs2l0h.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538779/card-08_mjdcbd.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538800/card-09_fke1lw.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538824/card-10_xwbdmc.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538790/card-11_mwxlur.png',
+  'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792538817/card-12_tpt4v4.png',
+];
+
+const card = (n) => SERVICE_CARD_IMAGES[n - 1];
 
 export const SERVICES_IMAGES = { hero, approach, cta };
 

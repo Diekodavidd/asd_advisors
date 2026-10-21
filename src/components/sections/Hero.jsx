@@ -103,20 +103,43 @@ export default function Hero() {
             ))}
           </motion.div>
 
-          <motion.div className="hero__play" {...fadeUpOnMount(1.3)}>
-            <button className="play" aria-label="Watch our story">
-              <motion.span
-                className="play__pulse"
-                animate={{ scale: [1, 1.6], opacity: [0.9, 0] }}
-                transition={{ duration: 2.2, repeat: Infinity, ease: 'easeOut' }}
-              />
-              <motion.span className="play__core" whileHover={{ scale: 1.12 }} whileTap={{ scale: 0.94 }}>
-                <PiPlayFill />
-              </motion.span>
-            </button>
-            <span>Watch<br />Our Story</span>
-          </motion.div>
-        </aside>
+          
+<motion.div className="hero__play" {...fadeUpOnMount(1.3)}>
+  <button
+    type="button"
+    className="play"
+    aria-label="Discover our approach"
+    onClick={() => {
+      document.getElementById('about')?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }}
+  >
+    <motion.span
+      className="play__pulse"
+      animate={{ scale: [1, 1.6], opacity: [0.9, 0] }}
+      transition={{
+        duration: 2.2,
+        repeat: Infinity,
+        ease: 'easeOut',
+      }}
+    />
+
+    <motion.span
+      className="play__core"
+      whileHover={{ scale: 1.12 }}
+      whileTap={{ scale: 0.94 }}
+    >
+      <PiArrowRight />
+    </motion.span>
+  </button>
+
+  <span>
+    Discover<br />
+    Our Approach
+  </span>
+</motion.div>      </aside>
 
         <ArcLines
           className="hero__arc"

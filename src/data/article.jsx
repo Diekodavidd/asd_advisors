@@ -1,13 +1,13 @@
 import {
   PiChartLineLight, PiUsersLight, PiCpuLight, PiUserFocusLight, PiScalesLight, PiLeafLight,
 } from 'react-icons/pi';
-import hero from '../assets/images/article/hero.png';
-import inline from '../assets/images/article/inline.png';
-import quote from '../assets/images/article/quote.png';
-import cta from '../assets/images/article/cta.png';
-import r1 from '../assets/images/article/related-1.png';
-import r2 from '../assets/images/article/related-2.png';
-import r3 from '../assets/images/article/related-3.png';
+const hero = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540411/hero_fof2fu.png';
+const inline = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540431/inline_hx0qvz.png';
+const quote = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540427/quote_etkmvo.png';
+const cta = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540395/cta_r5hhda.png';
+const r1 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540414/related-1_xfcr7j.png';
+const r2 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540415/related-2_wfdzdb.png';
+const r3 = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792540432/related-3_dtcivw.png';
 
 export const ARTICLE = {
   slug: 'unlocking-sustainable-growth',
