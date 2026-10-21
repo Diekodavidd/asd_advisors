@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
-  PiEnvelopeSimple, PiPhone, PiMapPin,
-  PiLinkedinLogoFill, PiInstagramLogoFill, PiXLogoFill, PiYoutubeLogoFill,
+  PiEnvelopeSimple,PiTiktokLogoFill, PiPhone, PiMapPin,PiFacebookLogoFill, PiInstagramLogoFill, PiXLogoFill, PiYoutubeLogoFill,
 } from 'react-icons/pi';
 import Logo from '../ui/Logo';
 import NavItem from '../ui/NavItem';
@@ -11,10 +10,21 @@ import { CONTACT, NAV_LINKS } from '../../data/content';
 import './Footer.css';
 
 const SOCIAL = [
-  { icon: PiLinkedinLogoFill, label: 'LinkedIn', href: '#' },
-  { icon: PiXLogoFill, label: 'X', href: '#' },
-  { icon: PiInstagramLogoFill, label: 'Instagram', href: '#' },
-  { icon: PiYoutubeLogoFill, label: 'YouTube', href: '#' },
+  {
+    icon: PiFacebookLogoFill,
+    label: 'Facebook',
+    href: 'https://www.facebook.com/asdadvisorsltd',
+  },
+  {
+    icon: PiInstagramLogoFill,
+    label: 'Instagram',
+    href: 'https://www.instagram.com/asdadvisorsltd',
+  },
+  {
+    icon: PiTiktokLogoFill,
+    label: 'TikTok',
+    href: 'https://www.tiktok.com/@asdadvisorsltd',
+  },
 ];
 
 /** variant="compact" (home) or "full" (contact details + legal bar, used on About). */

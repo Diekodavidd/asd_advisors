@@ -44,10 +44,10 @@ export const NAV_LINKS = [
 ];
 
 export const CONTACT = {
-  email: 'info@asdadvisors.com',
-  phone: '+234 800 123 4567',
-  phoneHref: 'tel:+2348001234567',
-  location: 'Lagos, Nigeria',
+  email: 'asdadvisors@outlook.com',
+  phone: '078 5842 4091',
+  phoneHref: 'tel:078 5842 4091',
+  location: 'The Wenta Business Centre, Electric Avenue,Enfield, England EN3 7XU',
 };
 
 /* ---------- Home ---------- */

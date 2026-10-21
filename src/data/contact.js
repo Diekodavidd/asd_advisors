@@ -2,11 +2,11 @@ import {
   PiChatsCircleLight, PiPuzzlePieceLight, PiHandshakeLight,
   PiEnvelopeSimpleLight, PiPhoneLight, PiMapPinLight, PiClockLight,
 } from 'react-icons/pi';
-import hero from '../assets/images/contact/hero.png';
-import side from '../assets/images/contact/side.png';
-import city from '../assets/images/contact/city.png';
-import map from '../assets/images/contact/map.png';
-import faq from '../assets/images/contact/faq.png';
+const hero = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792590180/hero_bfz17l.png';
+const side = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792590184/side_d01ydt.png';
+const city = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792590184/city_zc9pjv.png';
+const map = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792590005/Enfield_Night_Map_Location_Pin_ncm8y9.png';
+const faq = 'https://res.cloudinary.com/zy7u4nqi/image/upload/v1792590184/faq_vrn1wg.png';
 import { CONTACT } from './content';
 
 export const CONTACT_IMAGES = { hero, side, city, map, faq };
@@ -20,8 +20,8 @@ export const HERO_BADGES = [
 export const CONTACT_INFO = [
   { icon: PiEnvelopeSimpleLight, title: 'Email', text: CONTACT.email, href: 'mailto:' + CONTACT.email },
   { icon: PiPhoneLight, title: 'Phone', text: CONTACT.phone, href: CONTACT.phoneHref },
-  { icon: PiMapPinLight, title: 'Office', text: CONTACT.location + '\n(Full address to be confirmed)', href: '#location' },
-  { icon: PiClockLight, title: 'Working Hours', text: 'Monday \u2013 Friday\n9:00 AM \u2013 5:00 PM (WAT)', href: '#form' },
+  { icon: PiMapPinLight, title: 'Office', text: CONTACT.location + '\n', href: '#location' },
+  { icon: PiClockLight, title: 'Working Hours', text: 'Monday \u2013 Friday\n9:00 AM \u2013 5:00 PM (GMT)', href: '#form' },
 ];
 
 export const FORM_FIELDS = [
@@ -41,7 +41,7 @@ export const HELP_OPTIONS = [
   'Something else',
 ];
 
-export const DIRECTIONS_URL = 'https://maps.google.com/?q=Lagos,Nigeria';
+export const DIRECTIONS_URL = 'https://maps.app.goo.gl/JZ44CRMumbdEhfzu9?g_st=ic';
 
 // Placeholder answers — replace with ASD's approved copy.
 export const FAQS = [

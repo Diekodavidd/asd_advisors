@@ -24,7 +24,7 @@ export default function ContactSection() {
         <Eyebrow light rule={false}>Get in Touch</Eyebrow>
         <SplitLines className="display csec__info-title" delay={0.1} lines={['Contact', 'Information']} />
         <Reveal as="p" className="lead csec__info-lead" delay={0.25}>
-          We\u2019re here to answer your questions, explore opportunities and discuss how we can support your business.
+          We're here to answer your questions, explore opportunities and discuss how we can support your business.
         </Reveal>
         <div className="csec__list">
           {CONTACT_INFO.map(({ icon: Icon, title, text, href }, i) => (
