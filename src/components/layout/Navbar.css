@@ -21,3 +21,137 @@
 @media (max-width: 960px) {
   .nav__links, .nav__cta { display: none; }
 }
+
+/* Compact, premium navigation drawer */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  z-index: 45;
+
+  width: min(480px, 100%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 100px clamp(28px, 5vw, 56px) 40px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  background:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgba(195, 154, 100, 0.13),
+      transparent 55%
+    ),
+    linear-gradient(145deg, var(--navy-3), var(--navy) 75%);
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.line-mask {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.menu__item {
+  display: block;
+}
+
+.menu__link {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+
+  font-family: var(--serif);
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.25;
+  font-weight: 400;
+  color: var(--paper);
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.menu__link:hover,
+.menu__link.is-active {
+  color: var(--gold);
+}
+
+.menu__num {
+  flex: 0 0 22px;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--gold);
+}
+
+.menu__foot {
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(195, 154, 100, 0.25);
+
+  font-family: var(--sans);
+  font-size: 9px;
+  letter-spacing: 2px;
+  line-height: 1.8;
+  color: var(--mist);
+}
+
+/* Tablet and mobile */
+@media (max-width: 600px) {
+  .menu {
+    width: 100%;
+    padding: 100px 28px 32px;
+  }
+
+  .menu__links {
+    gap: 7px;
+  }
+
+  .menu__link {
+    gap: 13px;
+    font-size: clamp(25px, 6vw, 34px);
+    line-height: 1.3;
+  }
+
+  .menu__num {
+    flex-basis: 20px;
+    font-size: 10px;
+  }
+
+  .menu__foot {
+    margin-top: 28px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-height: 650px) {
+  .menu {
+    justify-content: flex-start;
+    padding-top: 90px;
+  }
+
+  .menu__links {
+    gap: 2px;
+  }
+
+  .menu__link {
+    font-size: clamp(23px, 3vw, 30px);
+    line-height: 1.2;
+  }
+
+  .menu__foot {
+    margin-top: 20px;
+  }
+}
