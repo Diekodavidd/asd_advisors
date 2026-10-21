@@ -13,7 +13,7 @@ const SOCIAL = [
   {
     icon: PiFacebookLogoFill,
     label: 'Facebook',
-    href: 'https://www.facebook.com/asdadvisorsltd',
+    href: 'https://www.facebook.com/profile.php?id=61594507001479',
   },
   {
     icon: PiInstagramLogoFill,

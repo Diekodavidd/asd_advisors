@@ -12,3 +12,50 @@
 @media (max-width: 960px) {
   .about { grid-template-columns: 1fr; }
 }
+
+.about__pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px 24px;
+}
+
+.about__pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.about__pillar-number {
+  flex-shrink: 0;
+  color: var(--gold);
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding-top: 3px;
+}
+
+.about__pillar-content {
+  min-width: 0;
+}
+
+.about__pillar-title {
+  margin: 0 0 6px;
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.about__pillar-description {
+  margin: 0;
+  color: var(--mist);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .about__pillars {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

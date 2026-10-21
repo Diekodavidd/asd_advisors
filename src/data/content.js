@@ -43,6 +43,29 @@ export const NAV_LINKS = [
   { label: 'Careers', to: '/careers' },
 ];
 
+export const ABOUT_PILLARSS = [
+  {
+    number: '01',
+    title: 'Strategic Clarity',
+    description: 'A clearer view of challenges and opportunities.',
+  },
+  {
+    number: '02',
+    title: 'Practical Insight',
+    description: 'Advice grounded in business needs and goals.',
+  },
+  {
+    number: '03',
+    title: 'Tailored Thinking',
+    description: 'Approaches shaped around each business.',
+  },
+  {
+    number: '04',
+    title: 'Sustainable Growth',
+    description: 'A focus on long-term progress.',
+  },
+];
+
 export const CONTACT = {
   email: 'asdadvisors@outlook.com',
   phone: '078 5842 4091',

@@ -33,13 +33,21 @@ export default function About() {
       <div className="about__visual">
         <ParallaxImage className="about__image" src={IMAGES.about} alt="Glass office tower at golden hour" reveal="up" position="52% center" strength={0.4} />
         <div className="about__stats">
-          {STATS.map((s, i) => (
-            <Reveal key={s.label} className="stat" delay={0.2 + i * 0.12}>
-              <div className="stat__value"><Counter to={s.value} />+</div>
-              <div className="stat__label">{s.label}</div>
-            </Reveal>
-          ))}
-        </div>
+  {[
+    { value: '01', label: 'Strategic Thinking' },
+    { value: '02', label: 'Tailored Advice' },
+    { value: '03', label: 'Long-Term Perspective' },
+  ].map((item, i) => (
+    <Reveal
+      key={item.value}
+      className="stat"
+      delay={0.2 + i * 0.12}
+    >
+      <div className="stat__value">{item.value}</div>
+      <div className="stat__label">{item.label}</div>
+    </Reveal>
+  ))}
+</div>
         <Reveal dir="fade" delay={0.6} className="about__tags">
           {ABOUT_TAGS.map((t, i) => (
             <Fragment key={t}>
