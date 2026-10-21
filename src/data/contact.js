@@ -45,8 +45,8 @@ export const DIRECTIONS_URL = 'https://maps.app.goo.gl/JZ44CRMumbdEhfzu9?g_st=ic
 
 // Placeholder answers — replace with ASD's approved copy.
 export const FAQS = [
-  { q: 'What types of businesses do you work with?', a: 'We work with ambitious businesses of all sizes \u2014 from growing SMEs to established organisations \u2014 across sectors including financial services, technology, energy, manufacturing and the public sector.' },
-  { q: 'How do I get started?', a: 'Send us a message using the form above or call our team. We\u2019ll arrange an initial conversation to understand your goals, then outline how we can help.' },
-  { q: 'Are your services available internationally?', a: 'Yes. We\u2019re based in Lagos and support businesses across Nigeria and beyond, working both in person and remotely.' },
+  { q: 'What types of businesses do you work with?', a: 'We work with ambitious businesses of all sizes from growing SMEs to established organisations  across sectors including financial services, technology, energy, manufacturing and the public sector.' },
+  { q: 'How do I get started?', a: 'Send us a message using the form above or call our team. We will arrange an initial conversation to understand your goals, then outline how we can help.' },
+  { q: 'Are your services available internationally?', a: 'Yes. We are based in England and support businesses across Europe and beyond, working both in person and remotely.' },
   { q: 'How long does an engagement typically take?', a: 'It depends on scope. Focused projects can take a few weeks, while broader transformation programmes run over several months. We agree a clear timeline up front.' },
 ];

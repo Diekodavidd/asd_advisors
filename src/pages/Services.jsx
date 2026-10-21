@@ -12,17 +12,23 @@ export default function Services() {
   return (
     <>
       <PageHero
-        eyebrow="Our Services"
-        lines={['Practical', 'Solutions for', <span className="accent">Real-World</span>, <span className="accent">Challenges.</span>]}
-        text="From strategy and growth planning to operational improvements and new opportunities, we provide advisory services tailored to your goals."
-        image={SERVICES_IMAGES.hero}
-        alt="Executive silhouetted against a glass tower at sunrise"
-        position="58% center"
-        shape="none"
-        pillars={['Ideas', 'People', 'Capital', 'Opportunity']}
-      >
-        <OrbLink to="/contact">Speak to a Consultant</OrbLink>
-      </PageHero>
+  pageClass="services"
+  eyebrow="Our Services"
+  lines={[
+    'Practical',
+    'Solutions for',
+    <span className="accent">Real-World</span>,
+    <span className="accent">Challenges.</span>,
+  ]}
+  text="From strategy and growth planning to operational improvements and new opportunities, we provide advisory services tailored to your goals."
+  image={SERVICES_IMAGES.hero}
+  alt="Executive silhouetted against a glass tower at sunrise"
+  position="58% center"
+  shape="none"
+  pillars={['Ideas', 'People', 'Capital', 'Opportunity']}
+>
+  <OrbLink to="/contact">Speak to a Consultant</OrbLink>
+</PageHero>
       <ServicesApproach />
       <ServiceGrid />
       <WhyUs />

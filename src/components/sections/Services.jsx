@@ -19,8 +19,8 @@ const ARCS = [
 
 export default function Services() {
   return (
-    <section id="services" className="services">
-      <ArcLines className="services__arcs" viewBox="0 0 800 400" preserveAspectRatio="xMaxYMid slice" paths={ARCS} />
+<section id="services" className="services services-page">
+        <ArcLines className="services__arcs" viewBox="0 0 800 400" preserveAspectRatio="xMaxYMid slice" paths={ARCS} />
 
       <div className="services__head">
         <div className="services__intro">

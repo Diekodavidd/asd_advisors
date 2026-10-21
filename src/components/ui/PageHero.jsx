@@ -45,8 +45,22 @@ function PillarRail({ pillars }) {
  *  - overlay: node drawn over the photo; compact: shorter hero (legal pages, articles)
  */
 export default function PageHero({
-  eyebrow, lines, text, image, alt, position = 'center', shape = 'curve',
-  pillars = DEFAULT_PILLARS, rail, top, sub, overlay, compact = false, titleClass = '', children,
+  eyebrow,
+  lines,
+  text,
+  image,
+  alt,
+  position = 'center',
+  shape = 'curve',
+  pillars = DEFAULT_PILLARS,
+  rail,
+  top,
+  sub,
+  overlay,
+  compact = false,
+  titleClass = '',
+  pageClass = '',
+  children,
 }) {
   const { scrollY } = useScroll();
   const copyY = useTransform(scrollY, [0, 700], [0, -90]);
@@ -54,8 +68,15 @@ export default function PageHero({
   const showRail = rail !== false;
 
   return (
-    <section id="top" className={'phero' + (compact ? ' phero--compact' : '') + (showRail ? '' : ' phero--norail')}>
-      <motion.div className="phero__copy" style={{ y: copyY, opacity: copyOpacity }}>
+<section
+  id="top"
+  className={
+    'phero' +
+    (compact ? ' phero--compact' : '') +
+    (showRail ? '' : ' phero--norail') +
+    (pageClass ? ` phero--${pageClass}` : '')
+  }
+>      <motion.div className="phero__copy" style={{ y: copyY, opacity: copyOpacity }}>
         {top && <motion.div className="phero__top" {...fadeUpOnMount(0.15, 0)}>{top}</motion.div>}
         {eyebrow && <Eyebrow light rule={false}>{eyebrow}</Eyebrow>}
         <SplitLines as="h1" className={'display phero__title ' + titleClass} onMount delay={0.35} lines={lines} />

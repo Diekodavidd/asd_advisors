@@ -28,7 +28,7 @@ export default function NewsletterForm() {
           transition={{ duration: 0.6, ease: EASE }}
           role="status"
         >
-          <PiCheckCircleFill /> Thank you \u2014 you\u2019re on the list.
+          <PiCheckCircleFill /> Thank you \ you\u2019re on the list.
         </motion.div>
       ) : (
         <motion.form
