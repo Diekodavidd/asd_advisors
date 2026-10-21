@@ -43,8 +43,7 @@ export default function Hero() {
           ]}
         />
         <motion.p className="lead hero__lead" {...fadeUpOnMount(0.9)}>
-          We partner with ambitious businesses to navigate complexity, unlock opportunities and build a more sustainable future.
-        </motion.p>
+We help businesses develop growth strategies, navigate complex decisions and identify opportunities for sustainable progress.        </motion.p>
         <motion.div className="hero__actions" {...fadeUpOnMount(1.05)}>
           <Magnetic strength={12}>
             <a href="#services" className="hero__explore">
@@ -54,12 +53,12 @@ export default function Hero() {
           </Magnetic>
           {/* <a href="#contact" className="underline-link">Talk to a Consultant <PiArrowRight /></a> */}
         </motion.div>
-        <motion.div className="hero__trust" {...fadeOnMount(1.25)}>
+        {/* <motion.div className="hero__trust" {...fadeOnMount(1.25)}>
           <div className="hero__avatars" aria-hidden="true">
             {[0, 1, 2, 3].map((i) => <span key={i} className={'avatar avatar--' + i} />)}
           </div>
           <span>Trusted by forward-thinking businesses</span>
-        </motion.div>
+        </motion.div> */}
       </motion.div>
 
       <div className="hero__visual">
