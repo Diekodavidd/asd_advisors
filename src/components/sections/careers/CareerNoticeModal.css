@@ -1,0 +1,145 @@
+
+.career-notice {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(5, 12, 22, 0.78);
+  backdrop-filter: blur(10px);
+  animation: careerNoticeFade 0.3s ease forwards;
+}
+
+.career-notice__panel {
+  position: relative;
+  width: min(100%, 580px);
+  padding: clamp(36px, 6vw, 64px);
+  background:
+    radial-gradient(100% 100% at 100% 0%, rgba(195, 154, 100, 0.12), transparent 60%),
+    var(--navy);
+  border: 1px solid rgba(195, 154, 100, 0.35);
+  color: var(--paper);
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.4);
+  animation: careerNoticeRise 0.45s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.career-notice__close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--paper);
+  font-size: 19px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.career-notice__close:hover {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.career-notice__eyebrow {
+  display: block;
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.career-notice__line {
+  display: block;
+  width: 48px;
+  height: 1px;
+  margin: 24px 0;
+  background: var(--gold);
+}
+
+.career-notice__panel h2 {
+  max-width: 440px;
+  margin: 0 0 22px;
+  font-family: inherit;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -1px;
+}
+
+.career-notice__panel h2 span {
+  color: var(--gold);
+}
+
+.career-notice__panel > p {
+  max-width: 430px;
+  margin: 0;
+  color: var(--mist);
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.career-notice__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 38px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.career-notice__footer > span {
+  max-width: 270px;
+  color: var(--mist);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.career-notice__footer button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 12px 17px;
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--navy);
+  font-size: 11px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.career-notice__footer button:hover {
+  background: transparent;
+  color: var(--gold);
+}
+
+@keyframes careerNoticeFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes careerNoticeRise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 520px) {
+  .career-notice__footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

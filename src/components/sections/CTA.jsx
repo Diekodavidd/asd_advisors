@@ -30,7 +30,7 @@ export default function CTA() {
           </Reveal>
           <Reveal delay={0.42} className="cta__action">
             <Magnetic strength={10}>
-              <a href="mailto:hello@asdadvisors.co.uk" className="pill pill--dark">
+              <a href="mailto:asdadvisors@outlook.com" className="pill pill--dark">
                 Get in Touch
                 <span className="pill__dot pill__dot--lg"><PiArrowRight /></span>
               </a>

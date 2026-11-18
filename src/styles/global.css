@@ -100,3 +100,16 @@ a:hover { color: var(--gold); }
 .pill--gold .pill__dot, .pill--cream .pill__dot { background: rgba(15, 26, 42, 0.08); border: 1px solid rgba(15, 26, 42, 0.25); color: var(--ink); }
 .pill--cream { background: var(--cream); color: var(--ink); }
 .pill--cream:hover { background: #fff; color: var(--ink); }
+button.orb-link,
+button.pill {
+  font-family: inherit;
+  appearance: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  cursor: pointer;
+  text-align: inherit;
+}
+button.orb-link,
+button.pill {
+  border: 0;
+}

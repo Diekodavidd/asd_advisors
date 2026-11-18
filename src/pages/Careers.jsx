@@ -1,3 +1,6 @@
+
+import { useState } from 'react';
+
 import PageHero from '../components/ui/PageHero';
 import OrbLink from '../components/ui/OrbLink';
 import PillLink from '../components/ui/PillLink';
@@ -5,11 +8,16 @@ import CtaBand from '../components/ui/CtaBand';
 import Culture from '../components/sections/careers/Culture';
 import Values from '../components/sections/careers/Values';
 import LifeAtASD from '../components/sections/careers/LifeAtASD';
-import Openings from '../components/sections/careers/Openings';
+import CareerNoticeModal from '../components/sections/careers/CareerNoticeModal';
 import Footer from '../components/layout/Footer';
 import { CAREERS_IMAGES } from '../data/careers';
 
 export default function Careers() {
+  const [careerNoticeOpen, setCareerNoticeOpen] = useState(false);
+
+  const openCareerNotice = () => setCareerNoticeOpen(true);
+  const closeCareerNotice = () => setCareerNoticeOpen(false);
+
   return (
     <>
       <PageHero
@@ -21,12 +29,19 @@ export default function Careers() {
         shape="curve"
         pillars={['People', 'Ideas', 'Capital', 'Opportunity']}
       >
-        <OrbLink href="#openings">Explore Opportunities</OrbLink>
+        <OrbLink onClick={openCareerNotice}>
+          Explore Opportunities
+        </OrbLink>
       </PageHero>
+
       <Culture />
       <Values />
-      <LifeAtASD />
+
+      <LifeAtASD onCareerClick={openCareerNotice} />
+
+      {/* Openings will be enabled when vacancies become available. */}
       {/* <Openings /> */}
+
       <CtaBand
         eyebrow="Let’s Build Together"
         lines={['Ready to Be Part', 'of What’s Next?']}
@@ -35,8 +50,19 @@ export default function Careers() {
         alt="Curved corridor opening onto the skyline"
         motto
       >
-        <PillLink href="#openings" variant="gold">View All Opportunities</PillLink>
+        <PillLink
+          variant="gold"
+          onClick={openCareerNotice}
+        >
+          View All Opportunities
+        </PillLink>
       </CtaBand>
+
+      <CareerNoticeModal
+        open={careerNoticeOpen}
+        onClose={closeCareerNotice}
+      />
+
       <Footer variant="full" />
     </>
   );
