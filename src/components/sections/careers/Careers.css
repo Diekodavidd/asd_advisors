@@ -4,7 +4,10 @@
 .cr-shade--left { background: linear-gradient(90deg, rgba(10, 11, 13, 0.92) 25%, transparent 65%); }
 .cr-shade--right { left: auto; width: 42%; background: linear-gradient(90deg, transparent, rgba(10, 11, 13, 0.92) 40%); }
 .labels-overlay { position: absolute; z-index: 2; display: flex; flex-direction: column; gap: 12px; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--paper); }
-
+#dasg{
+  color: #0a0b0d;
+  gap: 24px;
+    padding: 4px 4px 4px 22px;}
 .cr-culture { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1fr) minmax(0, 0.75fr); align-items: center; gap: clamp(20px, 3vw, 40px); padding: 16px clamp(20px, 3vw, 40px) 16px 32px; background: var(--cream); color: var(--ink); }
 .cr-culture__image { min-height: 240px; background: #0a0b0d; }
 .cr-culture__labels { left: clamp(20px, 3.6vw, 40px); top: 50%; transform: translateY(-50%); }

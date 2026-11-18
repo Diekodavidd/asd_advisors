@@ -29,7 +29,7 @@ export default function LifeAtASD({ onCareerClick }) {
 
         <Reveal delay={0.42}>
           <PillLink onClick={onCareerClick}>
-            Discover Life at ASD
+            <span id="dasg">Discover Life at ASD</span>
           </PillLink>
         </Reveal>
       </div>
