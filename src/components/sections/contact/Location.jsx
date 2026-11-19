@@ -17,7 +17,7 @@ export default function Location() {
         <Eyebrow rule={false}>Our Location</Eyebrow>
         <SplitLines className="display location__title" delay={0.1} lines={['A Global Mindset', 'with Local Insight.']} />
         <Reveal as="p" className="lead location__text" delay={0.25}>
-          Based in Enfield, London, we work with ambitious businesses across Nigeria and beyond, bringing global perspectives and deep local understanding to every engagement.
+          Based in Enfield, London, we work with ambitious businesses across England and beyond, bringing global perspectives and deep local understanding to every engagement.
         </Reveal>
         <Reveal delay={0.35}>
           <PillLink href={DIRECTIONS_URL} variant="outline" icon={PiNavigationArrow} magnet={8}>Get Directions</PillLink>
