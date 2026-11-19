@@ -15,7 +15,7 @@ export default function About() {
       <Story />
       <Purpose />
       <AboutApproach />
-      <Impact />
+      {/* <Impact /> */}
       <Leadership />
       <GlobalPerspective />
       <AboutCTA />
