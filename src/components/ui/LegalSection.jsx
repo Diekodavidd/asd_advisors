@@ -46,7 +46,7 @@ export default function LegalSection({ section, index }) {
       {email && (
         <div className="lsec__contact">
           <a href={'mailto:' + email}><PiEnvelopeSimpleFill />{email}</a>
-          <span><PiMapPinFill />Lagos, Nigeria</span>
+          <span><PiMapPinFill /> Enfield,England</span>
         </div>
       )}
     </motion.section>

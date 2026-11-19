@@ -27,7 +27,7 @@ export const VALUES = [
 
 // Replace with real roles (or fetch from your ATS).
 export const ROLES = [
-  { id: 'strategy-analyst', tag: 'Strategy', title: 'Strategy Analyst', location: 'Lagos, Nigeria', type: 'Full-time' },
-  { id: 'bd-associate', tag: 'Business Development', title: 'Business Development Associate', location: 'Lagos, Nigeria', type: 'Full-time' },
-  { id: 'ops-associate', tag: 'Operations', title: 'Operations Support Associate', location: 'Lagos, Nigeria', type: 'Full-time' },
+  { id: 'strategy-analyst', tag: 'Strategy', title: 'Strategy Analyst', location: 'United Kingdom', type: 'Full-time' },
+  { id: 'bd-associate', tag: 'Business Development', title: 'Business Development Associate', location: 'United Kingdom', type: 'Full-time' },
+  { id: 'ops-associate', tag: 'Operations', title: 'Operations Support Associate', location: 'United Kingdom', type: 'Full-time' },
 ];
