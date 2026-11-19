@@ -25,7 +25,7 @@ export default function Industries() {
       <Sectors />
       <Advantage />
       <PageCTA
-        eyebrow="Let\u2019s Build What\u2019s Next"
+        eyebrow="Let us Build What's Next"
         lines={['Ready to Explore', 'Opportunities in Your Industry?']}
         text="Speak to our team to discuss how our industry expertise can support your business goals and create a brighter, more sustainable future."
         image={INDUSTRIES_IMAGES.cta}

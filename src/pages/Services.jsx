@@ -33,7 +33,7 @@ export default function Services() {
       <ServiceGrid />
       <WhyUs />
       <PageCTA
-        eyebrow="Let\u2019s Work Together"
+        eyebrow="Let's Work Together"
         lines={['Ready to Explore', 'How We Can Support You?']}
         text="Speak to our team to discuss your business goals and discover how our services can help you create a brighter, more sustainable future."
         image={SERVICES_IMAGES.cta}

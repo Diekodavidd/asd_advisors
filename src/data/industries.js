@@ -33,7 +33,7 @@ export const SECTORS = [
 
 export const ADVANTAGES = [
   { icon: PiChartBarLight, title: 'Deep Sector Knowledge', text: 'Practical insights from real industry experience.' },
-  { icon: PiLightbulbLight, title: 'Tailored Solutions', text: 'Strategies designed for your industry\u2019s unique challenges.' },
+  { icon: PiLightbulbLight, title: 'Tailored Solutions', text: 'Strategies designed for your industrys unique challenges.' },
   { icon: PiUsersThreeLight, title: 'Cross-Industry Perspective', text: 'Broader insights to identify new opportunities.' },
   { icon: PiTargetLight, title: 'Measurable Impact', text: 'Solutions focused on tangible, long-term value.' },
 ];

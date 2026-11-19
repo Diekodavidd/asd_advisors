@@ -11,7 +11,7 @@ export default function Contact() {
     <>
       <PageHero
         eyebrow="Contact Us"
-        lines={['Let\u2019s Turn', 'Your Ambition', <span className="accent">Into Progress.</span>]}
+        lines={['Let us Turn', 'Your Ambition', <span className="accent">Into Progress.</span>]}
         text="Speak to our team to discuss your business goals and explore how our advisory services can help you create a brighter, more sustainable future."
         image={CONTACT_IMAGES.hero}
         alt="Boardroom with floor-to-ceiling windows over the skyline at sunset"

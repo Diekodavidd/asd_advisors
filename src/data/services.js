@@ -22,7 +22,7 @@ const card = (n) => SERVICE_CARD_IMAGES[n - 1];
 
 export const SERVICES_IMAGES = { hero, approach, cta };
 
-export const SERVICES_QUOTE = ['\u201COur services', 'are designed', 'to help you see', 'what\u2019s next,', 'make smarter', 'decisions and', 'turn ambition', 'into lasting', 'progress.\u201D'];
+export const SERVICES_QUOTE = ['\u201COur services', 'are designed', 'to help you see', 'what is next,', 'make smarter', 'decisions and', 'turn ambition', 'into lasting', 'progress.\u201D'];
 
 export const SERVICE_LIST = [
   ['Business\nGrowth Strategy', 'Develop clear, actionable strategies to accelerate growth and increase market share.'],
