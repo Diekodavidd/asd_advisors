@@ -2,14 +2,13 @@ import { motion } from 'framer-motion';
 import PillLink from '../../ui/PillLink';
 import SplitLines from '../../motion/SplitLines';
 import Reveal from '../../motion/Reveal';
-import { ARTICLE } from '../../../data/article';
 import { EASE, VIEWPORT } from '../../../lib/motion';
 import './Article.css';
 
-export default function ArticleCTA() {
-  return (
+export default function ArticleCTA({ images }) {
+    return (
     <section className="acta-band">
-      <img src={ARTICLE.images.cta} alt="" className="acta-band__img" />
+<img src={images.cta} alt="" className="acta-band__img" />
       <SplitLines className="display acta-band__title" lines={['Let’s Turn Insight', 'into Impact.']} />
       <motion.span className="st-vrule st-vrule--light" initial={{ scaleY: 0 }} whileInView={{ scaleY: 1 }} viewport={VIEWPORT} transition={{ duration: 1.2, delay: 0.3, ease: EASE }} />
       <Reveal as="p" className="lead acta-band__text" delay={0.3}>

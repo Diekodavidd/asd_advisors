@@ -104,7 +104,7 @@ export const APPROACH_STEPS = [
 ];
 
 export const INSIGHTS = [
-  { img: corridorImg, category: 'Business Growth', title: '5 Strategies for Sustainable Business Growth in 2025', href: '#insights' },
+  { img: corridorImg, category: 'Business Growth', title: '5 Strategies for Sustainable Business Growth in 2025', href: '/insights/unlocking-sustainable-growth' },
   { img: boardroomImg, category: 'Leadership', title: 'Building High-Performing Teams', href: '#insights' },
   { img: facadeImg, category: 'Operational Excellence', title: 'How to Improve Business Processes for Long-Term Success', href: '#insights' },
   { img: heroImg, category: 'Capital', title: 'Preparing Your Business for Investment', href: '#insights' },

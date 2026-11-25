@@ -113,3 +113,17 @@ button.orb-link,
 button.pill {
   border: 0;
 }
+.article-preview-content {
+  padding: 80px 0 120px;
+}
+
+.article-preview-content .container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.article-preview-content p {
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--ink, #252525);
+}

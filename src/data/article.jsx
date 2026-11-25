@@ -37,8 +37,34 @@ export const ARTICLE_CHALLENGES = [
   { icon: PiLeafLight, text: 'Sustainability and\nESG priorities' },
 ];
 
+// export const RELATED_INSIGHTS = [
+//   { category: 'Leadership', title: 'The Role of Leadership\nin Driving Transformation', date: 'Sep 28, 2024', readTime: '8 min read', img: r1 },
+//   { category: 'Sustainability', title: 'Why ESG is a Business\nImperative, Not a Choice', date: 'Sep 10, 2024', readTime: '10 min read', img: r2 },
+//   { category: 'Strategy', title: 'Five Strategic Priorities\nfor 2025 and Beyond', date: 'Aug 22, 2024', readTime: '9 min read', img: r3 },
+// ];
 export const RELATED_INSIGHTS = [
-  { category: 'Leadership', title: 'The Role of Leadership\nin Driving Transformation', date: 'Sep 28, 2024', readTime: '8 min read', img: r1 },
-  { category: 'Sustainability', title: 'Why ESG is a Business\nImperative, Not a Choice', date: 'Sep 10, 2024', readTime: '10 min read', img: r2 },
-  { category: 'Strategy', title: 'Five Strategic Priorities\nfor 2025 and Beyond', date: 'Aug 22, 2024', readTime: '9 min read', img: r3 },
+  {
+    slug: 'high-performing-teams-uncertain-times',
+    category: 'Leadership',
+    title: 'The Role of Leadership\nin Driving Transformation',
+    date: 'Sep 28, 2024',
+    readTime: '8 min read',
+    img: r1,
+  },
+  {
+    slug: 'business-case-sustainable-growth',
+    category: 'Sustainability',
+    title: 'Why ESG is a Business\nImperative, Not a Choice',
+    date: 'Sep 10, 2024',
+    readTime: '10 min read',
+    img: r2,
+  },
+  {
+    slug: 'sustainable-business-growth-strategies',
+    category: 'Strategy',
+    title: 'Five Strategic Priorities\nfor 2025 and Beyond',
+    date: 'Aug 22, 2024',
+    readTime: '9 min read',
+    img: r3,
+  },
 ];

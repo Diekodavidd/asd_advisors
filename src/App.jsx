@@ -36,10 +36,10 @@ const ROUTES = [
   },
   { path: '/industries', element: <Industries /> },
   { path: '/insights', element: <Insights /> },
-  {
-    path: '/insights/unlocking-sustainable-growth',
-    element: <Article />,
-  },
+ {
+  path: '/insights/:slug',
+  element: <Article />,
+},
   { path: '/careers', element: <Careers /> },
   { path: '/contact', element: <Contact /> },
   { path: '/privacy', element: <Privacy /> },
@@ -49,10 +49,15 @@ const ROUTES = [
 export default function App() {
   const location = useLocation();
 
-  const isNotFound = !ROUTES.some(
-    (route) => route.path === location.pathname
-  );
+ const isNotFound = !ROUTES.some((route) => {
+  if (route.path === location.pathname) return true;
 
+  if (route.path === '/insights/:slug') {
+    return /^\/insights\/[^/]+\/?$/.test(location.pathname);
+  }
+
+  return false;
+});
   return (
     <MotionConfig reducedMotion="user">
       <ScrollManager />

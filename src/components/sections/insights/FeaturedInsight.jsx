@@ -17,7 +17,9 @@ export default function FeaturedInsight() {
         <Reveal as="p" className="lead featured__lead" delay={0.35}>
           In a rapidly changing business environment, resilience and adaptability are more important than ever. Explore how forward-thinking businesses can navigate uncertainty and position themselves for long-term success.
         </Reveal>
-        <Reveal delay={0.45}><OrbLink to="/insights/unlocking-sustainable-growth">Read the Full Insight</OrbLink></Reveal>
+        <Reveal delay={0.45}><OrbLink to={`/insights/${FEATURED_ARTICLE.slug}`}>
+  Read the Full Insight
+</OrbLink></Reveal>
       </div>
       <div className="featured__card">
         <ParallaxImage className="featured__image" src={INSIGHTS_IMAGES.featured} alt="Skyline through a glass corridor at sunset" reveal="left" strength={0.4} />
