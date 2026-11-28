@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import {
-  PiEnvelopeSimple,PiTiktokLogoFill, PiPhone, PiMapPin,PiFacebookLogoFill, PiInstagramLogoFill, PiXLogoFill, PiYoutubeLogoFill,
+  PiEnvelopeSimple,PiTiktokLogoFill, PiPhone, PiMapPin,PiFacebookLogoFill, PiXLogoFill, PiYoutubeLogoFill,
 } from 'react-icons/pi';
 import Logo from '../ui/Logo';
 import NavItem from '../ui/NavItem';
@@ -14,11 +14,6 @@ const SOCIAL = [
     icon: PiFacebookLogoFill,
     label: 'Facebook',
     href: 'https://www.facebook.com/profile.php?id=61594507001479',
-  },
-  {
-    icon: PiInstagramLogoFill,
-    label: 'Instagram',
-    href: 'https://www.instagram.com/asdadvisorsltd',
   },
   {
     icon: PiTiktokLogoFill,

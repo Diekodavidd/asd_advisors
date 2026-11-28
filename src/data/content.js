@@ -70,7 +70,7 @@ export const CONTACT = {
   email: 'asdadvisors@outlook.com',
   phone: '078 5842 4091',
   phoneHref: 'tel:078 5842 4091',
-  location: 'The Wenta Business Centre, Electric Avenue,Enfield, England EN3 7XU',
+  location: 'The Wenta Business Centre, Electric Avenue, Enfield, England EN3 7XU',
 };
 
 /* ---------- Home ---------- */

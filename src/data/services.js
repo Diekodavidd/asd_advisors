@@ -34,10 +34,7 @@ export const SERVICE_LIST = [
   ['Operational\nExcellence', 'Streamline processes, improve efficiency and build scalable operations.'],
   ['Organisational\nTransformation', 'Support business and organisational change to enhance agility, resilience and long-term competitiveness.'],
   ['Market & Industry\nIntelligence', 'Provide data-driven insights and analysis to inform better decisions and uncover opportunities.'],
-  ['Investment\nAdvisory', 'Support capital strategy, investor readiness and opportunity evaluation to unlock growth.'],
-  ['Sustainability &\nESG Advisory', 'Help businesses integrate sustainable practices and ESG considerations for long-term value creation.'],
-  ['Special Advisory\nEngagements', 'Tailored advisory support for unique business challenges, opportunities and high-priority initiatives.'],
-].map(([title, text], i) => ({ n: String(i + 1).padStart(2, '0'), title, text, img: card(i + 1), to: i === 0 ? '/services/business-growth-strategy' : '/contact' }));
+ ].map(([title, text], i) => ({ n: String(i + 1).padStart(2, '0'), title, text, img: card(i + 1), to: i === 0 ? '/services/business-growth-strategy' : '/contact' }));
 
 export const WHY_US = [
   { icon: PiLightbulbLight, title: 'Insight-Led', text: 'We combine deep industry knowledge with practical experience.' },

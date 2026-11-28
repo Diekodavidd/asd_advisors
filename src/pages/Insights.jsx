@@ -1,5 +1,7 @@
 import PageHero from '../components/ui/PageHero';
 import PageCTA from '../components/ui/PageCTA';
+import PillLink from '../components/ui/PillLink';
+
 import OrbLink from '../components/ui/OrbLink';
 import ArticleBrowser from '../components/sections/insights/ArticleBrowser';
 import FeaturedInsight from '../components/sections/insights/FeaturedInsight';
@@ -24,7 +26,16 @@ export default function Insights() {
       </PageHero>
       <ArticleBrowser />
       <FeaturedInsight />
-      <PageCTA
+       <PageCTA
+        eyebrow="Let's Work Together"
+        lines={['Ready to Explore', 'How We Can Support You?']}
+        text="Speak to our team to discuss your business goals and discover how our services can help you create a brighter, more sustainable future."
+ image={INSIGHTS_IMAGES.cta}
+         alt="Glass tower rising over the skyline at golden hour"
+      >
+        <PillLink to="/contact">Speak to a Consultant</PillLink>
+      </PageCTA>
+      {/* <PageCTA
         id="subscribe"
         eyebrow="Stay Informed"
         lines={['Get the Latest Insights']}
@@ -33,7 +44,7 @@ export default function Insights() {
         alt="Curved architecture framing the skyline"
       >
         <NewsletterForm />
-      </PageCTA>
+      </PageCTA> */}
       <Footer variant="full" />
     </>
   );

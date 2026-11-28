@@ -10,3 +10,193 @@
 @media (max-width: 860px) {
   .leadership { grid-template-columns: 1fr; }
 }
+
+/* Meet Our Team Modal */
+
+.team-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(8, 12, 25, 0.76);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.team-modal__panel {
+  position: relative;
+  width: min(900px, 100%);
+  max-height: min(760px, 90vh);
+  overflow-y: auto;
+  padding: 58px 60px 30px;
+  background: var(--color-ivory, #f5f2eb);
+  color: var(--color-ink, #10182b);
+  box-shadow: 0 25px 90px rgba(0, 0, 0, 0.25);
+}
+
+.team-modal__close {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(16, 24, 43, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  color: inherit;
+  font-size: 23px;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.team-modal__close:hover {
+  background: var(--color-ink, #10182b);
+  color: #fff;
+}
+
+.team-modal__header {
+  max-width: 600px;
+  margin-bottom: 38px;
+}
+
+.team-modal__eyebrow {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.team-modal__header h2 {
+  margin: 0;
+  font-family: 'Gilda Display', serif;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.team-modal__header h2 em {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+
+.team-modal__header p {
+  max-width: 480px;
+  margin-top: 17px;
+  color: rgba(16, 24, 43, 0.7);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.team-modal__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.team-modal__member {
+  min-width: 0;
+}
+#dsws{
+  color: white;
+  background-color: #10182b;
+}
+.team-modal__portrait {
+  width: 100%;
+  aspect-ratio: 4 / 4.5;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #e5e0d7;
+  color: rgba(16, 24, 43, 0.55);
+  font-family: 'Gilda Display', serif;
+  font-size: 42px;
+}
+
+.team-modal__portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-modal__details {
+  padding-top: 17px;
+}
+
+.team-modal__details h3 {
+  margin: 0;
+  font-family: 'Gilda Display', serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.team-modal__details > span {
+  display: block;
+  margin-top: 6px;
+  color: #9a7845;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.team-modal__details p {
+  margin-top: 12px;
+  color: rgba(16, 24, 43, 0.68);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.team-modal__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 42px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(16, 24, 43, 0.15);
+  color: rgba(16, 24, 43, 0.55);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 650px) {
+  .team-modal {
+    padding: 12px;
+  }
+
+  .team-modal__panel {
+    max-height: 94vh;
+    padding: 55px 24px 24px;
+  }
+
+  .team-modal__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .team-modal__member {
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    gap: 17px;
+    align-items: start;
+  }
+
+  .team-modal__portrait {
+    aspect-ratio: 3 / 4;
+  }
+
+  .team-modal__details {
+    padding-top: 4px;
+  }
+
+  .team-modal__footer {
+    flex-direction: column;
+  }
+}
